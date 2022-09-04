@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fde571c468c43756eae3",
+    "revision": "26d7246c78c250227b43",
     "url": "/rootsinsuits/static/css/main.99bff2d2.chunk.css"
   },
   {
-    "revision": "fde571c468c43756eae3",
-    "url": "/rootsinsuits/static/js/main.63c540c1.chunk.js"
+    "revision": "26d7246c78c250227b43",
+    "url": "/rootsinsuits/static/js/main.061eebe8.chunk.js"
   },
   {
     "revision": "70657bad5d0502c8079e",
@@ -96,20 +96,24 @@ self.__precacheManifest = [
     "url": "/rootsinsuits/static/media/background4.af5d33a0.jpg"
   },
   {
-    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
-    "url": "/rootsinsuits/static/media/icons.8e3c7f55.eot"
+    "revision": "9c74e172f87984c48ddf5c8108cabe67",
+    "url": "/rootsinsuits/static/media/flags.9c74e172.png"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
     "url": "/rootsinsuits/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "701ae6abd4719e9c2ada3535a497b341",
-    "url": "/rootsinsuits/static/media/outline-icons.701ae6ab.eot"
+    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
+    "url": "/rootsinsuits/static/media/icons.8e3c7f55.eot"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
     "url": "/rootsinsuits/static/media/icons.faff9214.woff"
+  },
+  {
+    "revision": "701ae6abd4719e9c2ada3535a497b341",
+    "url": "/rootsinsuits/static/media/outline-icons.701ae6ab.eot"
   },
   {
     "revision": "cd6c777f1945164224dee082abaea03a",
@@ -124,12 +128,16 @@ self.__precacheManifest = [
     "url": "/rootsinsuits/static/media/icons.b87b9ba5.ttf"
   },
   {
+    "revision": "ad97afd3337e8cda302d10ff5a4026b8",
+    "url": "/rootsinsuits/static/media/outline-icons.ad97afd3.ttf"
+  },
+  {
     "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
     "url": "/rootsinsuits/static/media/outline-icons.82f60bd0.svg"
   },
   {
-    "revision": "ad97afd3337e8cda302d10ff5a4026b8",
-    "url": "/rootsinsuits/static/media/outline-icons.ad97afd3.ttf"
+    "revision": "962a1bf31c081691065fe333d9fa8105",
+    "url": "/rootsinsuits/static/media/icons.962a1bf3.svg"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
@@ -144,14 +152,6 @@ self.__precacheManifest = [
     "url": "/rootsinsuits/static/media/brand-icons.e8c322de.woff2"
   },
   {
-    "revision": "9c74e172f87984c48ddf5c8108cabe67",
-    "url": "/rootsinsuits/static/media/flags.9c74e172.png"
-  },
-  {
-    "revision": "962a1bf31c081691065fe333d9fa8105",
-    "url": "/rootsinsuits/static/media/icons.962a1bf3.svg"
-  },
-  {
     "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
     "url": "/rootsinsuits/static/media/brand-icons.c5ebe0b3.ttf"
   },
@@ -160,7 +160,7 @@ self.__precacheManifest = [
     "url": "/rootsinsuits/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "f6d3076e661e57ebdee3abd9ef81353b",
+    "revision": "337c2d7210f061a2b2ee00e8d653663e",
     "url": "/rootsinsuits/index.html"
   }
 ];
