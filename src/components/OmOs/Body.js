@@ -175,7 +175,10 @@ function OmOsBody() {
               til de originale sangskrivere bag numrene. Roots in Suits leverer
               musikken til DIN fest, og sørger løbende for at tilpasse aftenen
               til gæsternes behov. Kontakt os {""}
-              <Link style={{ textDecoration: "none" }} to={"/booking"}>
+              <Link
+                style={{ textDecoration: "none" }}
+                to={"/rootsinsuits/booking"}
+              >
                 her
               </Link>
               {""} for at få et uforpligtende tilbud.
@@ -198,7 +201,10 @@ function OmOsBody() {
             <br />
             Roots in Suits leverer musikken til DIN fest, og sørger løbende for
             at tilpasse aftenen til gæsternes behov. Kontakt os {""}
-            <Link style={{ textDecoration: "none" }} to={"/booking"}>
+            <Link
+              style={{ textDecoration: "none" }}
+              to={"/rootsinsuits/booking"}
+            >
               her
             </Link>
             {""} for at få et uforpligtende tilbud.

@@ -35,7 +35,10 @@ function Header() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <Link style={{ textDecoration: "none", color: "black" }} to={"/"}>
+        <Link
+          style={{ textDecoration: "none", color: "black" }}
+          to={"/rootsinsuits"}
+        >
           <ListItem button key={"Hjem"}>
             <ListItemText
               primary={"HJEM"}
@@ -52,7 +55,7 @@ function Header() {
         </Link>
         <Link
           style={{ textDecoration: "none", color: "black" }}
-          to={"/booking"}
+          to={"/rootsinsuits/booking"}
         >
           <ListItem button key={"Booking"}>
             <ListItemText
@@ -73,7 +76,7 @@ function Header() {
       <List>
         <Link
           style={{ textDecoration: "none", color: "black" }}
-          to={"/anmeldelser"}
+          to={"/rootsinsuits/anmeldelser"}
         >
           <ListItem button key={"Anmeldelser"}>
             <ListItemText
@@ -89,7 +92,10 @@ function Header() {
             />
           </ListItem>
         </Link>
-        <Link style={{ textDecoration: "none", color: "black" }} to={"/omos"}>
+        <Link
+          style={{ textDecoration: "none", color: "black" }}
+          to={"/rootsinsuits/omos"}
+        >
           <ListItem button key={"Om Os"}>
             <ListItemText
               primary={"OM OS"}
@@ -136,16 +142,16 @@ function Header() {
         </div>
       ) : (
         <div className="menuBar">
-          <Link to={"/"} id="link">
+          <Link to={"/rootsinsuits"} id="link">
             HJEM
           </Link>
-          <Link to={"/Booking"} id="link">
+          <Link to={"/rootsinsuits/booking"} id="link">
             BOOKING
           </Link>
-          <Link to={"/Anmeldelser"} id="link">
+          <Link to={"/rootsinsuits/anmeldelser"} id="link">
             ANMELDELSER
           </Link>
-          <Link to={"/OmOs"} id="link">
+          <Link to={"/rootsinsuits/omos"} id="link">
             OM OS
           </Link>
         </div>
