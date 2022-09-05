@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, HashRouter as Router } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 import Home from "./components/pages/Home";
 import ErrorPage from "./components/pages/ErrorPage";
@@ -11,13 +11,21 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/rootsinsuits" element={<Home />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route path="/anmeldelser" element={<Anmeldelser />} />
-        <Route path="/omos" element={<OmOs />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route path="/anmeldelser" element={<Anmeldelser />} />
-        <Route path="/omos" element={<OmOs />} />
+        <Route path="/rootsinsuits" exact element={<Home />} />
+        <Route path="/rootsinsuits/booking" exact element={<Booking />} />
+        <Route
+          path="/rootsinsuits/anmeldelser"
+          exact
+          element={<Anmeldelser />}
+        />
+        <Route path="/rootsinsuits/omos" exact element={<OmOs />} />
+        <Route path="/rootsinsuits/booking" exact element={<Booking />} />
+        <Route
+          path="/rootsinsuits/anmeldelser"
+          exact
+          element={<Anmeldelser />}
+        />
+        <Route path="/rootsinsuits/omos" exact element={<OmOs />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
