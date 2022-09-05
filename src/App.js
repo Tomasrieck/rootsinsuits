@@ -11,21 +11,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/rootsinsuits" exact element={<Home />} />
-        <Route path="/rootsinsuits/booking" exact element={<Booking />} />
-        <Route
-          path="/rootsinsuits/anmeldelser"
-          exact
-          element={<Anmeldelser />}
-        />
-        <Route path="/rootsinsuits/omos" exact element={<OmOs />} />
-        <Route path="/rootsinsuits/booking" exact element={<Booking />} />
-        <Route
-          path="/rootsinsuits/anmeldelser"
-          exact
-          element={<Anmeldelser />}
-        />
-        <Route path="/rootsinsuits/omos" exact element={<OmOs />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/booking" exact element={<Booking />} />
+        <Route path="/anmeldelser" exact element={<Anmeldelser />} />
+        <Route path="/omos" exact element={<OmOs />} />
+        <Route path="/booking" exact element={<Booking />} />
+        <Route path="/anmeldelser" exact element={<Anmeldelser />} />
+        <Route path="/omos" exact element={<OmOs />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

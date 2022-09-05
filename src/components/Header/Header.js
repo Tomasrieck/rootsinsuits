@@ -35,10 +35,7 @@ function Header() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <Link
-          style={{ textDecoration: "none", color: "black" }}
-          to={"/rootsinsuits"}
-        >
+        <Link style={{ textDecoration: "none", color: "black" }} to={"/"}>
           <ListItem button key={"Hjem"}>
             <ListItemText
               primary={"HJEM"}
@@ -55,7 +52,7 @@ function Header() {
         </Link>
         <Link
           style={{ textDecoration: "none", color: "black" }}
-          to={"/rootsinsuits/booking"}
+          to={"/booking"}
         >
           <ListItem button key={"Booking"}>
             <ListItemText
@@ -76,7 +73,7 @@ function Header() {
       <List>
         <Link
           style={{ textDecoration: "none", color: "black" }}
-          to={"/rootsinsuits/anmeldelser"}
+          to={"/anmeldelser"}
         >
           <ListItem button key={"Anmeldelser"}>
             <ListItemText
@@ -92,10 +89,7 @@ function Header() {
             />
           </ListItem>
         </Link>
-        <Link
-          style={{ textDecoration: "none", color: "black" }}
-          to={"/rootsinsuits/omos"}
-        >
+        <Link style={{ textDecoration: "none", color: "black" }} to={"/omos"}>
           <ListItem button key={"Om Os"}>
             <ListItemText
               primary={"OM OS"}
@@ -142,16 +136,16 @@ function Header() {
         </div>
       ) : (
         <div className="menuBar">
-          <Link to={"/rootsinsuits"} id="link">
+          <Link to={""} id="link">
             HJEM
           </Link>
-          <Link to={"/rootsinsuits/booking"} id="link">
+          <Link to={"/booking"} id="link">
             BOOKING
           </Link>
-          <Link to={"/rootsinsuits/anmeldelser"} id="link">
+          <Link to={"/anmeldelser"} id="link">
             ANMELDELSER
           </Link>
-          <Link to={"/rootsinsuits/omos"} id="link">
+          <Link to={"/omos"} id="link">
             OM OS
           </Link>
         </div>
