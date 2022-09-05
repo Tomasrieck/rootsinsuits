@@ -136,7 +136,7 @@ function Header() {
         </div>
       ) : (
         <div className="menuBar">
-          <Link to={""} id="link">
+          <Link to={"/"} id="link">
             HJEM
           </Link>
           <Link to={"/booking"} id="link">
