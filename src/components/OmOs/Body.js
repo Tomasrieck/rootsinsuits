@@ -56,34 +56,32 @@ function OmOsBody() {
       className="section"
     >
       {document.documentElement.clientWidth < 720 ? (
-        <div className="promo">
-          <h1 style={{ fontSize: "18px" }}>
-            SE VORES PROMOVIDEO{" "}
-            <a
-              href="https://www.youtube.com/watch?v=CVZs_EH-D_4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HER
-            </a>
-          </h1>
+        <div className="video-responsive">
+          <iframe
+            width="95%"
+            height="auto"
+            src="https://www.youtube.com/embed/CVZs_EH-D_4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       ) : (
-        <div className="promo">
-          <h1 style={{ fontSize: "30px" }}>
-            SE VORES PROMOVIDEO{" "}
-            <a
-              href="https://www.youtube.com/watch?v=CVZs_EH-D_4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HER
-            </a>
-          </h1>
+        <div className="video-responsive">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CVZs_EH-D_4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       )}
       {document.documentElement.clientWidth < 720 ? (
-        <div className="textfield">
+        <div className="textfield" id="top-border">
           <p style={{ fontSize: "16px" }}>
             Roots in Suits har et stort og varieret repertoire.
             <p
@@ -103,7 +101,7 @@ function OmOsBody() {
           </p>
         </div>
       ) : (
-        <div className="textfield">
+        <div className="textfield" id="top-border">
           <p style={{ fontSize: "25px" }}>
             Roots in Suits har et stort og varieret repertoire. <br />
             Vi har stort fokus på at "ramme" vores publikum hver gang. Derfor

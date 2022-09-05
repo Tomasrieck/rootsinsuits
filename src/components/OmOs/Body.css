@@ -69,3 +69,9 @@ link:hover {
   border-top-width: 1px;
   padding-top: 4%;
 }
+
+.video-responsive {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  border-width: 1px;
+}
