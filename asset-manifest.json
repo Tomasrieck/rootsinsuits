@@ -10,7 +10,11 @@
   "static/js/3.8f945b4c.chunk.js": "/rootsinsuits/static/js/3.8f945b4c.chunk.js",
   "static/js/3.8f945b4c.chunk.js.map": "/rootsinsuits/static/js/3.8f945b4c.chunk.js.map",
   "index.html": "/rootsinsuits/index.html",
+<<<<<<< HEAD
   "precache-manifest.052c0113b1a80c6a9289ff21058378e5.js": "/rootsinsuits/precache-manifest.052c0113b1a80c6a9289ff21058378e5.js",
+=======
+  "precache-manifest.9b74dbf9530eddb395a8699f300d2ad5.js": "/rootsinsuits/precache-manifest.9b74dbf9530eddb395a8699f300d2ad5.js",
+>>>>>>> 983b4ea7cfccd0e4257f04153026441b48cefcd3
   "service-worker.js": "/rootsinsuits/service-worker.js",
   "static/css/2.6647682f.chunk.css.map": "/rootsinsuits/static/css/2.6647682f.chunk.css.map",
   "static/css/main.e06bd061.chunk.css.map": "/rootsinsuits/static/css/main.e06bd061.chunk.css.map",
