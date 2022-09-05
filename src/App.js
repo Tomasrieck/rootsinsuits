@@ -12,9 +12,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="rootsinsuits/" element={<Home />} />
-        <Route path="rootsinsuits/booking" element={<Booking />} />
-        <Route path="rootsinsuits/anmeldelser" element={<Anmeldelser />} />
-        <Route path="rootsinsuits/omos" element={<OmOs />} />
+        <Route path="/rootsinsuits/booking" element={<Booking />} />
+        <Route path="/rootsinsuits/anmeldelser" element={<Anmeldelser />} />
+        <Route path="/rootsinsuits/omos" element={<OmOs />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
