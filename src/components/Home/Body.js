@@ -1,6 +1,6 @@
 import React from "react";
 
-import Video from "../../assets/Roots.mp4";
+import Video from "../../assets/rootsInVideo.mp4";
 import "./Body.css";
 
 function homeBody() {
