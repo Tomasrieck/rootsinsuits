@@ -93,11 +93,13 @@ body {
 }
 .btn:hover {
   transform: scale(1.17);
-  cursor: not-allowed;
 }
 .btn:disabled {
   color: rgb(0, 0, 0);
   background-color: rgb(89, 89, 89);
+}
+.btn:disabled:hover {
+  cursor: not-allowed;
 }
 .loader {
   margin-top: 0.1vh;
