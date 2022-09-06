@@ -14,7 +14,7 @@ function Home() {
         backgroundRepeat: "no-repeat",
         width: "100vw",
         height: "100vh",
-        overflow: "auto",
+        overflow: "hiden",
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "center",
