@@ -21,9 +21,14 @@ import Helmig from "../../assets/helmig.jpg";
 import Danseorkestret from "../../assets/danseorkestret.jpeg";
 
 function OmOsBody() {
-  function ShowAndHide() {
-    var x = document.getElementById("cut-text");
-    var y = document.getElementById("dots");
+  function ShowAndHide(text) {
+    if (text === "first") {
+      var x = document.getElementById("cut-text1");
+      var y = document.getElementById("dots1");
+    } else {
+      x = document.getElementById("cut-text2");
+      y = document.getElementById("dots2");
+    }
     if (x.style.visibility === "hidden") {
       x.style.visibility = "visible";
       x.style.whiteSpace = "normal";
@@ -64,7 +69,7 @@ function OmOsBody() {
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowfullscreen="true"
           ></iframe>
         </div>
       ) : (
@@ -76,27 +81,27 @@ function OmOsBody() {
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowfullscreen="true"
           ></iframe>
         </div>
       )}
       {document.documentElement.clientWidth < 720 ? (
         <div className="textfield" id="top-border">
-          <p style={{ fontSize: "16px" }}>
-            Roots in Suits har et stort og varieret repertoire.
+          <p style={{ fontSize: "17px" }}>
+            Roots in Suits har et stort og varieret repertoire. Vi har stort
+            fokus på at "ramme" vores publikum hver gang.
             <p
-              onClick={ShowAndHide}
-              id="dots"
-              style={{ fontSize: "15px", color: "rgb(117,117,117)" }}
+              onClick={() => ShowAndHide("first")}
+              id="dots1"
+              style={{ fontSize: "17px", color: "rgb(117,117,117)" }}
             >
               Læs mere...
             </p>
-            <span id="cut-text">
-              Vi har stort fokus på at "ramme" vores publikum hver gang. Derfor
-              tilpasser vi løbende vores repertoire og imødekommer også gerne
-              ønsker fra publikum. Af samme grund har vi ikke en fast sætliste,
-              men vi spiller, blandt mange, mange andre, numre af disse
-              kunstnere:
+            <span id="cut-text1">
+              Derfor tilpasser vi løbende vores repertoire og imødekommer også
+              gerne ønsker fra publikum. Af samme grund har vi ikke en fast
+              sætliste, men vi spiller, blandt mange, mange andre, numre af
+              disse kunstnere:
             </span>
           </p>
         </div>
@@ -152,17 +157,17 @@ function OmOsBody() {
       )}
       {document.documentElement.clientWidth < 720 ? (
         <div className="textfield" id="top-border">
-          <p style={{ fontSize: "15px" }}>
+          <p style={{ fontSize: "17px" }}>
             Med Roots in Suits på scenen, er du sikret en festlig aften med
             musikken i top!
             <p
-              onClick={ShowAndHide}
-              id="dots"
-              style={{ fontSize: "15px", color: "rgb(117,117,117)" }}
+              onClick={() => ShowAndHide("second")}
+              id="dots2"
+              style={{ fontSize: "17px", color: "rgb(117,117,117)" }}
             >
               Læs mere...
             </p>
-            <span id="cut-text">
+            <span id="cut-text2">
               Roots in Suits blev dannet på baggrund af et målrettet engagement
               og en ubændig trang til at optræde til festlige arrangementer,
               såsom bryllups-, jubilæums-, personale-, by-, og

@@ -19,11 +19,19 @@ body {
   color: white;
 }
 
-#cut-text { 
+#cut-text1 { 
   visibility: hidden;
   white-space: nowrap;
 }
-#dots {
+#dots1 {
+  visibility: visible;
+  margin: 0px;
+}
+#cut-text2 { 
+  visibility: hidden;
+  white-space: nowrap;
+}
+#dots2 {
   visibility: visible;
   margin: 0px;
 }
