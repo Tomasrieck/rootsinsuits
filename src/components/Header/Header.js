@@ -71,13 +71,10 @@ function Header() {
       </List>
       <Divider />
       <List>
-        <Link
-          style={{ textDecoration: "none", color: "black" }}
-          to={"/anmeldelser"}
-        >
-          <ListItem button key={"Anmeldelser"}>
+        <Link style={{ textDecoration: "none", color: "black" }} to={"/omos"}>
+          <ListItem button key={"Om Os"}>
             <ListItemText
-              primary={"ANMELDELSER"}
+              primary={"OM OS"}
               primaryTypographyProps={{
                 marginTop: 1,
                 marginBottom: 1,
@@ -89,10 +86,13 @@ function Header() {
             />
           </ListItem>
         </Link>
-        <Link style={{ textDecoration: "none", color: "black" }} to={"/omos"}>
-          <ListItem button key={"Om Os"}>
+        <Link
+          style={{ textDecoration: "none", color: "black" }}
+          to={"/anmeldelser"}
+        >
+          <ListItem button key={"Anmeldelser"}>
             <ListItemText
-              primary={"OM OS"}
+              primary={"ANMELDELSER"}
               primaryTypographyProps={{
                 marginTop: 1,
                 marginBottom: 1,
@@ -142,11 +142,11 @@ function Header() {
           <Link to={"/booking"} id="link">
             BOOKING
           </Link>
-          <Link to={"/anmeldelser"} id="link">
-            ANMELDELSER
-          </Link>
           <Link to={"/omos"} id="link">
             OM OS
+          </Link>
+          <Link to={"/anmeldelser"} id="link">
+            ANMELDELSER
           </Link>
         </div>
       )}

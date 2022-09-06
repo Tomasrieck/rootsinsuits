@@ -47,7 +47,7 @@ const BookingBody = () => {
         borderRadius: "10px",
         position: "relative",
         width: "90%",
-        maxWidth: "800px",
+        maxWidth: "650px",
         paddingBottom: "4%",
         marginTop: 7,
         marginBottom: 27,
@@ -162,7 +162,7 @@ const BookingBody = () => {
                 className="btn"
                 style={{
                   backgroundColor: success && "#66bb6a",
-                  fontSize: "18px",
+                  fontSize: "16px",
                 }}
               />
               {loading ? <div class="loader" /> : ""}

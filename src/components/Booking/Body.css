@@ -86,9 +86,9 @@ body {
   background-color: white;
   border-radius: 4%;
   border: 0;
-  padding: 1.5vh;
-  width: 45%;
-  max-width: 27ch;
+  padding: 1.4vh;
+  width: 40%;
+  max-width: 25ch;
   transition: transform .2s;
 }
 .btn:hover {

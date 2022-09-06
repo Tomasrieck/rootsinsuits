@@ -7,7 +7,7 @@ function AnmeldelserBody() {
       style={{
         backgroundColor: "rgba(0, 0, 0, 0.8)",
         borderRadius: "10px",
-        maxWidth: "1200px",
+        maxWidth: "1017px",
         width: "90%",
         position: "relative",
         display: "flex",
@@ -124,7 +124,7 @@ function AnmeldelserBody() {
           }}
         >
           <div className="grid-item">
-            <h2>
+            <h2 style={{ fontSize: "18px" }}>
               Jeg siger det bare drenge, I er simpelthen de bedste{" "}
               <span role="img" aria-label="emoji">
                 👍
@@ -141,7 +141,7 @@ function AnmeldelserBody() {
             </h2>
           </div>
           <div className="grid-item">
-            <h2>
+            <h2 style={{ fontSize: "18px" }}>
               Fantastisk band!!!! I alt den tid Roots in Suits spillede var
               dansegulvet fyldt. Vores gæster var vilde med musikken og det var
               vi også. Tusind tak !
@@ -151,13 +151,13 @@ function AnmeldelserBody() {
             </h2>
           </div>
           <div className="grid-item">
-            <h2>
+            <h2 style={{ fontSize: "18px" }}>
               De her fyre forstår at holde en fest. Kan kun anbefale dem. Mvh
               Lynddahl Ribe
             </h2>
           </div>
           <div className="grid-item">
-            <h2>
+            <h2 style={{ fontSize: "18px" }}>
               Fantastisk band, der virkelig kan sætte gang i dansegulvet til en
               fest{" "}
               <span role="img" aria-label="emoji">
@@ -166,7 +166,7 @@ function AnmeldelserBody() {
             </h2>
           </div>
           <div className="grid-item">
-            <h2>
+            <h2 style={{ fontSize: "18px" }}>
               I lørdags blev min søn gift. En overraskelse til brudeparret var,
               at Roots in Suits skulle spille. Jeg har aldrig givet en bedre
               gave! Bandet spillede og sang fantastisk og dansegulvet var fyldt
@@ -175,7 +175,7 @@ function AnmeldelserBody() {
             </h2>
           </div>
           <div className="grid-item">
-            <h2>
+            <h2 style={{ fontSize: "18px" }}>
               Roots in Suits skabte den helt perfekte stemning til vores bryllup
               i lørdags. Skøn baggrundsmusik under middagen og perfekt
               dansemusik senere på aftenen{" "}
@@ -190,7 +190,7 @@ function AnmeldelserBody() {
             </h2>
           </div>
           <div className="grid-item">
-            <h2>
+            <h2 style={{ fontSize: "18px" }}>
               Vi havde den store fornøjelse, at have dette fantastiske band til
               at spille til vores fest, og hold nu op, de var helt fantastiske.{" "}
               <span role="img" aria-label="emoji">
