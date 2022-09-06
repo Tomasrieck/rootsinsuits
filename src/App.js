@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, HashRouter as Router } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 import Home from "./components/pages/Home";
 import ErrorPage from "./components/pages/ErrorPage";
