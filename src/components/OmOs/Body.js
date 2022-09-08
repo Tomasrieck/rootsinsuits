@@ -44,7 +44,7 @@ function OmOsBody() {
       style={{
         backgroundColor: "rgba(0, 0, 0, 0.8)",
         borderRadius: "10px",
-        maxWidth: "1200px",
+        maxWidth: "1017px",
         width: "90%",
         paddingBottom: 20,
         position: "relative",

@@ -13,7 +13,6 @@ import instagram from "../../assets/instagram.png";
 const BookingBody = () => {
   const [navn, setNavn] = useState(false);
   const [email, setEmail] = useState(false);
-  const [besked, setBesked] = useState(false);
   const [reCaptcha, setReCaptcha] = useState(false);
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -48,7 +47,6 @@ const BookingBody = () => {
         position: "relative",
         width: "90%",
         maxWidth: "650px",
-        paddingBottom: "4%",
         marginTop: 7,
         marginBottom: 27,
         alignItems: "center",
@@ -68,7 +66,7 @@ const BookingBody = () => {
             mt: "4%",
           }}
         >
-          {document.documentElement.clientWidth < 600 ? (
+          {document.documentElement.clientWidth < 720 ? (
             <div className="header">
               <h1 style={{ fontSize: "18px" }}>
                 Få et uforpligtende tilbud her:
@@ -81,7 +79,7 @@ const BookingBody = () => {
               </h1>
             </div>
           )}
-          {document.documentElement.clientWidth < 600 ? (
+          {document.documentElement.clientWidth < 720 ? (
             <form ref={form} onSubmit={sendEmail} id="contact-form">
               <input
                 onChange={() => setNavn(true)}
@@ -100,11 +98,11 @@ const BookingBody = () => {
                 style={{ fontSize: "14px" }}
               ></input>
               <textarea
-                onChange={() => setBesked(true)}
                 type="text"
                 name="besked"
                 id="input"
-                placeholder="Besked..."
+                placeholder="Smid os en besked!                                                                                         
+                Nævn gerne tidspunkt samt lokation..."
                 rows="5"
                 style={{ fontSize: "14px" }}
               ></textarea>
@@ -112,7 +110,7 @@ const BookingBody = () => {
                 <GoogleReCaptcha onVerify={() => setReCaptcha(true)} />
               </GoogleReCaptchaProvider>
               <input
-                disabled={!(navn && email && besked && reCaptcha)}
+                disabled={!(navn && email && reCaptcha)}
                 type="submit"
                 value={success ? "Sendt!" : "Send"}
                 className="btn"
@@ -137,6 +135,7 @@ const BookingBody = () => {
                 id="input"
                 placeholder="Fulde navn..."
               ></input>
+
               <input
                 onChange={() => setEmail(true)}
                 type="text"
@@ -145,18 +144,18 @@ const BookingBody = () => {
                 placeholder="Email..."
               ></input>
               <textarea
-                onChange={() => setBesked(true)}
                 type="text"
                 name="besked"
                 id="input"
-                placeholder="Besked..."
+                placeholder="Smid os en besked!                                                                                         
+                Nævn gerne tidspunkt samt lokation..."
                 rows="5"
               ></textarea>
               <GoogleReCaptchaProvider reCaptchaKey="6Le3jl4dAAAAAIiiGi3ijJYou2-mxLpNOZvT3NYK">
                 <GoogleReCaptcha onVerify={() => setReCaptcha(true)} />
               </GoogleReCaptchaProvider>
               <input
-                disabled={!(navn && email && besked && reCaptcha)}
+                disabled={!(navn && email && reCaptcha)}
                 type="submit"
                 value={success ? "Sendt!" : "Send"}
                 className="btn"
