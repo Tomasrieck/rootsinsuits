@@ -23,6 +23,7 @@
     "react-google-invisible-recaptcha": "^0.2.12",
     "react-google-recaptcha": "^2.1.0",
     "react-google-recaptcha-v3": "^1.10.0",
+    "react-helmet": "^6.1.0",
     "react-hook-screen-orientation": "^1.0.4",
     "react-minimal-side-navigation": "^1.9.2",
     "react-pro-sidebar": "^0.7.1",
