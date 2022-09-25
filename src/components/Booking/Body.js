@@ -13,6 +13,7 @@ import instagram from "../../assets/instagram.png";
 const BookingBody = () => {
   const [navn, setNavn] = useState(false);
   const [email, setEmail] = useState(false);
+  const [dato, setDato] = useState(false);
   const [reCaptcha, setReCaptcha] = useState(false);
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -97,6 +98,14 @@ const BookingBody = () => {
                 placeholder="Email..."
                 style={{ fontSize: "14px" }}
               ></input>
+              <input
+                onChange={() => setDato(true)}
+                type="text"
+                name="dato"
+                id="input"
+                placeholder="Dato for arrangement..."
+                style={{ fontSize: "14px" }}
+              ></input>
               <textarea
                 type="text"
                 name="besked"
@@ -143,6 +152,13 @@ const BookingBody = () => {
                 id="input"
                 placeholder="Email..."
               ></input>
+              <input
+                onChange={() => setDato(true)}
+                type="text"
+                name="dato"
+                id="input"
+                placeholder="Dato for arrangement..."
+              ></input>
               <textarea
                 type="text"
                 name="besked"
@@ -155,7 +171,7 @@ const BookingBody = () => {
                 <GoogleReCaptcha onVerify={() => setReCaptcha(true)} />
               </GoogleReCaptchaProvider>
               <input
-                disabled={!(navn && email && reCaptcha)}
+                disabled={!(navn && email && dato && reCaptcha)}
                 type="submit"
                 value={success ? "Sendt!" : "Send"}
                 className="btn"
