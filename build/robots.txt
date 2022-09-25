@@ -1,5 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /roots-in-suits-forside/
+Disallow: /roots-in-suits-om-os/
+Disallow: /roots-in-suits-booking/
+Disallow: /roots-in-suits-repertoire/
 
 Sitemap: https://www.rootsinsuits.dk/sitemap.xml
