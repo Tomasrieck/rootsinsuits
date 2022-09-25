@@ -103,7 +103,7 @@ const BookingBody = () => {
                 type="text"
                 name="dato"
                 id="input"
-                placeholder="Dato for arrangement..."
+                placeholder="dd/mm/åå"
                 style={{ fontSize: "14px" }}
               ></input>
               <textarea
@@ -157,7 +157,7 @@ const BookingBody = () => {
                 type="text"
                 name="dato"
                 id="input"
-                placeholder="Dato for arrangement..."
+                placeholder="dd-mm-åå"
               ></input>
               <textarea
                 type="text"
@@ -170,17 +170,20 @@ const BookingBody = () => {
               <GoogleReCaptchaProvider reCaptchaKey="6Le3jl4dAAAAAIiiGi3ijJYou2-mxLpNOZvT3NYK">
                 <GoogleReCaptcha onVerify={() => setReCaptcha(true)} />
               </GoogleReCaptchaProvider>
-              <input
-                disabled={!(navn && email && dato && reCaptcha)}
-                type="submit"
-                value={success ? "Sendt!" : "Send"}
-                className="btn"
-                style={{
-                  backgroundColor: success && "#66bb6a",
-                  fontSize: "16px",
-                }}
-              />
-              {loading ? <div class="loader" /> : ""}
+              {loading ? (
+                <div class="loader" />
+              ) : (
+                <input
+                  disabled={!(navn && email && dato && reCaptcha)}
+                  type="submit"
+                  value={success ? "Sendt!" : "Send"}
+                  className="btn"
+                  style={{
+                    backgroundColor: success && "#66bb6a",
+                    fontSize: "16px",
+                  }}
+                />
+              )}
             </form>
           )}
         </Box>
