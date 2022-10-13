@@ -174,8 +174,7 @@ const BookingBody = () => {
                 type="text"
                 name="besked"
                 id="input"
-                placeholder="Smid os en besked!                                                                                         
-                Nævn gerne lokation..."
+                placeholder="Send os en besked samt lokation for arrangement..."
                 rows="5"
                 style={{ fontSize: "14px" }}
               ></textarea>
