@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rootsinsuits/precache-manifest.1ab087d05a49527d5b788ec45443bf5b.js"
+  "/Tomasrieck/rootsinsuits.git/precache-manifest.bdd69df3c3f1f64c54d94eb1a2edd25e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/rootsinsuits/index.html", {
+workbox.routing.registerNavigationRoute("/Tomasrieck/rootsinsuits.git/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
