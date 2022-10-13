@@ -67,7 +67,7 @@ body {
   font-family: 'Times New Roman';
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
-  width: 70%;
+  width: 74%;
   padding: 2%;
   border-radius: 0px;
   border-top: 0;
@@ -82,6 +82,41 @@ body {
   border-width: 2px;
   transform: scale(1.02);
 }
+
+.dateField {
+  width: 77%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#date {
+  resize: none;
+  outline: none;
+  font-size: 17px;
+  font-family: 'Times New Roman';
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 22%;
+  margin: 0% 2%;
+  padding: 2%;
+  border-radius: 0px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-width: 1px;
+  border-color: rgb(127, 127, 127);
+  transition: transform .2s;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#date:focus {
+  background-color: rgba(7, 7, 7, 0.7);
+  border-width: 2px;
+  transform: scale(1.02);
+}
+
 .btn {
   color: black;
   background-color: white;
@@ -101,6 +136,7 @@ body {
 }
 .btn:disabled:hover {
   cursor: not-allowed;
+  transform: scale(1);
 }
 .loader {
   margin-top: 0.1vh;

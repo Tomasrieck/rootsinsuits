@@ -17,6 +17,7 @@ const BookingBody = () => {
   const [reCaptcha, setReCaptcha] = useState(false);
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
+  const date = new Date();
 
   const form = useRef();
 
@@ -98,20 +99,83 @@ const BookingBody = () => {
                 placeholder="Email..."
                 style={{ fontSize: "14px" }}
               ></input>
-              <input
-                onChange={() => setDato(true)}
-                type="text"
-                name="dato"
-                id="input"
-                placeholder="dd/mm/åå"
-                style={{ fontSize: "14px" }}
-              ></input>
+              <div className="dateField">
+                <h3
+                  style={{
+                    width: "5%",
+                    color: "rgba(255, 255, 255, 0.8)",
+                    margin: "0% 2%",
+                    fontFamily: "TimesNewRoman",
+                    fontSize: "12px",
+                  }}
+                >
+                  Dato:
+                </h3>
+                <div
+                  style={{
+                    width: "80%",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
+                >
+                  <input
+                    onChange={() => setDato(true)}
+                    type="text"
+                    name="date"
+                    id="date"
+                    placeholder={date.getDate()}
+                    style={{ fontSize: "12px" }}
+                    maxLength="2"
+                  ></input>
+                  <h7
+                    style={{
+                      width: "0%",
+                      color: "rgba(255, 255, 255, 0.8)",
+                      margin: "0% 0%",
+                      fontFamily: "TimesNewRoman",
+                      fontSize: "12px",
+                    }}
+                  >
+                    /
+                  </h7>
+                  <input
+                    onChange={() => setDato(true)}
+                    type="text"
+                    name="month"
+                    id="date"
+                    placeholder={date.getMonth() + 1}
+                    style={{ fontSize: "12px" }}
+                    maxLength="2"
+                  ></input>
+                  <h7
+                    style={{
+                      width: "0%",
+                      color: "rgba(255, 255, 255, 0.8)",
+                      margin: "0% 0%",
+                      fontFamily: "TimesNewRoman",
+                      fontSize: "12px",
+                    }}
+                  >
+                    /
+                  </h7>
+                  <input
+                    onChange={() => setDato(true)}
+                    type="text"
+                    name="year"
+                    id="date"
+                    placeholder={date.getFullYear()}
+                    style={{ fontSize: "12px" }}
+                    maxLength="4"
+                  ></input>
+                </div>
+              </div>
               <textarea
                 type="text"
                 name="besked"
                 id="input"
                 placeholder="Smid os en besked!                                                                                         
-                Nævn gerne tidspunkt samt lokation..."
+                Nævn gerne lokation..."
                 rows="5"
                 style={{ fontSize: "14px" }}
               ></textarea>
@@ -144,7 +208,6 @@ const BookingBody = () => {
                 id="input"
                 placeholder="Fulde navn..."
               ></input>
-
               <input
                 onChange={() => setEmail(true)}
                 type="text"
@@ -152,19 +215,76 @@ const BookingBody = () => {
                 id="input"
                 placeholder="Email..."
               ></input>
-              <input
-                onChange={() => setDato(true)}
-                type="text"
-                name="dato"
-                id="input"
-                placeholder="dd-mm-åå"
-              ></input>
+              <div className="dateField">
+                <h3
+                  style={{
+                    width: "5%",
+                    color: "rgba(255, 255, 255, 0.8)",
+                    margin: "0% 2%",
+                    fontFamily: "TimesNewRoman",
+                    fontSize: "17px",
+                  }}
+                >
+                  Dato:
+                </h3>
+                <div
+                  style={{
+                    width: "80%",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
+                >
+                  <input
+                    onChange={() => setDato(true)}
+                    type="text"
+                    name="date"
+                    id="date"
+                    placeholder={date.getDate()}
+                  ></input>
+                  <h7
+                    style={{
+                      width: "0%",
+                      color: "rgba(255, 255, 255, 0.8)",
+                      margin: "0% 0%",
+                      fontFamily: "TimesNewRoman",
+                      fontSize: "17px",
+                    }}
+                  >
+                    /
+                  </h7>
+                  <input
+                    onChange={() => setDato(true)}
+                    type="text"
+                    name="month"
+                    id="date"
+                    placeholder={date.getMonth() + 1}
+                  ></input>
+                  <h7
+                    style={{
+                      width: "0%",
+                      color: "rgba(255, 255, 255, 0.8)",
+                      margin: "0% 0%",
+                      fontFamily: "TimesNewRoman",
+                      fontSize: "17px",
+                    }}
+                  >
+                    /
+                  </h7>
+                  <input
+                    onChange={() => setDato(true)}
+                    type="text"
+                    name="year"
+                    id="date"
+                    placeholder={date.getFullYear()}
+                  ></input>
+                </div>
+              </div>
               <textarea
                 type="text"
                 name="besked"
                 id="input"
-                placeholder="Smid os en besked!                                                                                         
-                Nævn gerne tidspunkt samt lokation..."
+                placeholder="Send os en besked samt lokation for arrangement..."
                 rows="5"
               ></textarea>
               <GoogleReCaptchaProvider reCaptchaKey="6Le3jl4dAAAAAIiiGi3ijJYou2-mxLpNOZvT3NYK">
