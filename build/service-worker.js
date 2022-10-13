@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Tomasrieck/rootsinsuits.git/precache-manifest.5848323ebc1496197f68faa570e5ed77.js"
+  "/Tomasrieck/rootsinsuits.git/precache-manifest.9ae21a308df1f6d8d38eb472340436ef.js"
 );
 
 workbox.clientsClaim();
