@@ -6,7 +6,7 @@ import "./Body.css";
 
 import { Link } from "react-router-dom";
 
-import Jeppe from "../../assets/Jeppe.jpg";
+import Andreas from "../../assets/Andreas.jpg";
 import Frede from "../../assets/Frede.jpg";
 import Mangus from "../../assets/Mangus.jpg";
 import Guffe from "../../assets/Guffe.jpg";
@@ -263,16 +263,16 @@ function OmOsBody() {
 
 const osData = [
   {
-    img: Jeppe,
-    title: "Jeppe Schimdt Hansen",
+    img: Andreas,
+    title: "Andreas Købke Brandt",
     author: (
       <a
-        href="https://www.instagram.com/jeppe_schmidt/"
+        href="https://www.instagram.com/abrandtmusic_official/"
         className="link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        @jeppe_schmidt
+        @abrandtmusic_official
       </a>
     ),
   },

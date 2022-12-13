@@ -93,7 +93,7 @@ const BookingBody = () => {
               ></input>
               <input
                 onChange={() => setEmail(true)}
-                type="text"
+                type="email"
                 name="email"
                 id="input"
                 placeholder="Email..."
@@ -121,7 +121,7 @@ const BookingBody = () => {
                 >
                   <input
                     onChange={() => setDato(true)}
-                    type="text"
+                    type="number"
                     name="date"
                     id="date"
                     placeholder={date.getDate()}
@@ -141,7 +141,7 @@ const BookingBody = () => {
                   </h7>
                   <input
                     onChange={() => setDato(true)}
-                    type="text"
+                    type="number"
                     name="month"
                     id="date"
                     placeholder={date.getMonth() + 1}
@@ -161,7 +161,7 @@ const BookingBody = () => {
                   </h7>
                   <input
                     onChange={() => setDato(true)}
-                    type="text"
+                    type="number"
                     name="year"
                     id="date"
                     placeholder={date.getFullYear()}
@@ -209,7 +209,7 @@ const BookingBody = () => {
               ></input>
               <input
                 onChange={() => setEmail(true)}
-                type="text"
+                type="email"
                 name="email"
                 id="input"
                 placeholder="Email..."
@@ -236,7 +236,7 @@ const BookingBody = () => {
                 >
                   <input
                     onChange={() => setDato(true)}
-                    type="text"
+                    type="number"
                     name="date"
                     id="date"
                     placeholder={date.getDate()}
@@ -254,7 +254,7 @@ const BookingBody = () => {
                   </h7>
                   <input
                     onChange={() => setDato(true)}
-                    type="text"
+                    type="number"
                     name="month"
                     id="date"
                     placeholder={date.getMonth() + 1}
@@ -272,7 +272,7 @@ const BookingBody = () => {
                   </h7>
                   <input
                     onChange={() => setDato(true)}
-                    type="text"
+                    type="number"
                     name="year"
                     id="date"
                     placeholder={date.getFullYear()}
