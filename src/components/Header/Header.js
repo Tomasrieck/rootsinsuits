@@ -145,6 +145,9 @@ function Header() {
           <Link to={"/omos"} id="link">
             OM OS
           </Link>
+          <Link to={"/priser"} id="link">
+            PRISER
+          </Link>
           <Link to={"/anmeldelser"} id="link">
             ANMELDELSER
           </Link>

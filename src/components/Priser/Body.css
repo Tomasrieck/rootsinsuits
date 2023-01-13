@@ -1,0 +1,38 @@
+body {
+  align-items: flex-start;
+  overflow: auto;
+}
+
+.textfield {
+  width: 90%;
+  text-align: left;
+  padding: 2%;
+  border-radius: 10px;
+}
+.textfield p {
+  font-size: x-large;
+  font-family: "TimesNewRoman";
+  line-height: 1.7;
+  word-spacing: 7%;
+  letter-spacing: 0.7px;
+  color: white;
+}
+
+.section {
+  flex: 0.42;
+  height: 75vh;
+  margin: 3%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+#top-border {
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0px;
+  border-top-width: 1px;
+  padding-top: 4%;
+}

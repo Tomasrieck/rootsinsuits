@@ -28,7 +28,7 @@ body {
 .menuBar {
   display: flex;
   justify-content: space-between;
-  width: 45vw;
+  width: 48vw;
   max-width: 700px;
   border-top: 0;
   border-left: 0;
