@@ -3,13 +3,13 @@ body {
   overflow: auto;
 }
 
-.textfield {
+.headerText {
   width: 90%;
   text-align: left;
   padding: 2%;
   border-radius: 10px;
 }
-.textfield p {
+.headerText p {
   font-size: x-large;
   font-family: "TimesNewRoman";
   line-height: 1.7;
@@ -18,7 +18,22 @@ body {
   color: white;
 }
 
-.section {
+.itemText {
+  width: 90%;
+  text-align: left;
+  padding: 2%;
+  border-radius: 10px;
+}
+.itemText p {
+  font-size: x-large;
+  font-family: "TimesNewRoman";
+  line-height: 1.7;
+  word-spacing: 7%;
+  letter-spacing: 0.7px;
+  color: white;
+}
+
+.content {
   flex: 0.42;
   height: 75vh;
   margin: 3%;
