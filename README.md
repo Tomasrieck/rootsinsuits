@@ -63,7 +63,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Before running 'npm deploy', run 'git remote set-url origin https://<your_username>:<your_PAT>@github.com/tomasrieck/rootsinsuits.git'
 
 ### `npm run build` fails to minify
 
