@@ -1,12 +1,12 @@
 import React from "react";
 import ImageList from "@mui/material/ImageList";
+import { Box } from "@mui/material";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./Body.css";
 
 import { Link } from "react-router-dom";
 
-import Andreas from "../../assets/Andreas.jpg";
 import Frede from "../../assets/Frede.jpg";
 import Mangus from "../../assets/Mangus.jpg";
 import Guffe from "../../assets/Guffe.jpg";
@@ -193,7 +193,7 @@ function OmOsBody() {
             Roots in Suits blev dannet på baggrund af et målrettet engagement og
             en ubændig trang til at optræde til festlige arrangementer, såsom
             bryllups-, jubilæums-, personale-, by-, og fødselsdagsfester. <br />
-            Roots in Suits består af 6 unge fyre fra Ribe i alderen 22-26 år,
+            Roots in Suits består af 6 unge fyre fra Ribe i alderen 25-28 år,
             der til sammen danner et dynamisk festband med mange års musikalsk
             erfaring. Med respekt for de gode gamle klassikere, formår de at
             levere et autentisk svar som en hyldest til de originale
@@ -233,49 +233,117 @@ function OmOsBody() {
           ))}
         </ImageList>
       ) : (
-        <ImageList
-          sx={{ width: "90%", height: "80vw" }}
-          cols={3}
-          rowHeight={"100%"}
-          gap={17}
-          className="gallery"
-        >
-          {osData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=248&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="lazy"
-              />
-              <ImageListItemBar
-                title={item.title}
-                subtitle={item.author}
-                style={{ fontFamily: "TimesNewRoman", fontSize: 14 }}
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
+        // Removed extra curly braces around the self-invoking function:
+        (() => {
+          const cols = 3;
+          // Split osData into full rows and last row items
+          const fullRowsCount = Math.floor(osData.length / cols);
+          const fullRowsItems = osData.slice(0, fullRowsCount * cols);
+          const lastRowItems = osData.slice(fullRowsCount * cols);
+
+          return (
+            <>
+              {/* Render full rows using ImageList */}
+              {fullRowsItems.length > 0 && (
+                <ImageList
+                  sx={{ width: "90%" }}
+                  cols={cols}
+                  rowHeight="100%"
+                  className="gallery"
+                  gap={17}
+                >
+                  {fullRowsItems.map((item) => (
+                    <ImageListItem key={item.img}>
+                      <img
+                        src={`${item.img}?w=248&fit=crop&auto=format`}
+                        srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                        alt={item.title}
+                        loading="lazy"
+                      />
+                      <ImageListItemBar
+                        title={item.title}
+                        subtitle={item.author}
+                        sx={{
+                          position: "absolute",
+                          bottom: 0,
+                          left: 0,
+                          right: 0,
+                          "& .MuiImageListItemBar-title": {
+                            fontSize: 18, // Increase the title font size
+                          },
+                          "& .MuiImageListItemBar-subtitle": {
+                            fontSize: 14, // Increase the subtitle font size
+                          },
+                          color: "white",
+                          fontFamily: "TimesNewRoman",
+                        }}
+                      />
+                    </ImageListItem>
+                  ))}
+                </ImageList>
+              )}
+
+              {/* Render the last row centered if it has fewer than cols items */}
+              {lastRowItems.length > 0 && (
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent:
+                      lastRowItems.length === cols ? "space-between" : "center",
+                    gap: 17,
+                    width: "90%",
+                    margin: "0 auto",
+                  }}
+                  className="gallery"
+                >
+                  {lastRowItems.map((item) => (
+                    <Box
+                      key={item.img}
+                      sx={{
+                        position: "relative", // Added to contain the overlay
+                        flex: `0 0 ${100 / cols}%`,
+                        textAlign: "left",
+                      }}
+                    >
+                      <img
+                        src={`${item.img}?w=248&fit=crop&auto=format`}
+                        srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                        alt={item.title}
+                        loading="lazy"
+                        style={{ width: "100%" }}
+                      />
+                      <ImageListItemBar
+                        title={item.title}
+                        subtitle={item.author}
+                        sx={{
+                          position: "absolute", // Ensure overlay is positioned relative to the Box
+                          bottom: 0,
+                          left: 0,
+                          right: 0,
+                          color: "white",
+                          fontFamily: "TimesNewRoman",
+                          fontSize: 14,
+                          "& .MuiImageListItemBar-title": {
+                            fontSize: 18, // Increase the title font size
+                          },
+                          "& .MuiImageListItemBar-subtitle": {
+                            fontSize: 14, // Increase the subtitle font size
+                          },
+                        }}
+                      />
+                    </Box>
+                  ))}
+                </Box>
+              )}
+            </>
+          );
+        })()
       )}
     </div>
   );
 }
 
 const osData = [
-  {
-    img: Andreas,
-    title: "Andreas Købke Brandt",
-    author: (
-      <a
-        href="https://www.instagram.com/abrandtmusic_official/"
-        className="link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        @abrandtmusic_official
-      </a>
-    ),
-  },
   {
     img: Frede,
     title: "Frederik Wind",
@@ -292,7 +360,7 @@ const osData = [
   },
   {
     img: Mangus,
-    title: "Magnus Mulbjerg Bendtsen",
+    title: "Magnus Mulbjerg",
     author: (
       <a
         href="https://www.instagram.com/magnus.mulbjerg/"
@@ -306,7 +374,7 @@ const osData = [
   },
   {
     img: Guffe,
-    title: "Gustav Thomsen Purreskov",
+    title: "Gustav Purreskov",
     author: (
       <a
         href="https://www.instagram.com/g_purreskov/"
@@ -320,7 +388,7 @@ const osData = [
   },
   {
     img: Haas,
-    title: "Jesper Haas Jensen",
+    title: "Jesper Haas",
     author: (
       <a
         href="https://www.instagram.com/jesperhaas/"
@@ -334,7 +402,7 @@ const osData = [
   },
   {
     img: Tomas,
-    title: "Tomas O. Rosenvind Rieck",
+    title: "Tomas Rosenvind",
     author: (
       <a
         href="https://www.instagram.com/riecktomas/"
