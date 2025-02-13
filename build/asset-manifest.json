@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.d891d1ed.css",
-    "main.js": "/static/js/main.660d6467.js",
+    "main.js": "/static/js/main.488597ad.js",
     "static/js/496.3d35d979.chunk.js": "/static/js/496.3d35d979.chunk.js",
     "static/media/rootsInVideo.mp4": "/static/media/rootsInVideo.dade7e90c5b690763c7a.mp4",
     "static/media/background1.jpg": "/static/media/background1.7911a5545ad61019830e.jpg",
     "static/media/background3.jpg": "/static/media/background3.9608cbe5feaf514f7d3d.jpg",
     "static/media/background4.jpg": "/static/media/background4.bbe5641c3d0040db78bf.jpg",
     "static/media/Frede.jpg": "/static/media/Frede.f73f6ae603278b452b9d.jpg",
-    "static/media/Andreas.jpg": "/static/media/Andreas.2889c57bf935bea63af4.jpg",
     "static/media/Mangus.jpg": "/static/media/Mangus.0c783fe2d7702237ce6f.jpg",
     "static/media/Haas.jpg": "/static/media/Haas.24003d372f82507799aa.jpg",
     "static/media/Guffe.jpg": "/static/media/Guffe.22ceec706ce274f43e33.jpg",
@@ -39,11 +38,11 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "main.d891d1ed.css.map": "/static/css/main.d891d1ed.css.map",
-    "main.660d6467.js.map": "/static/js/main.660d6467.js.map",
+    "main.488597ad.js.map": "/static/js/main.488597ad.js.map",
     "496.3d35d979.chunk.js.map": "/static/js/496.3d35d979.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d891d1ed.css",
-    "static/js/main.660d6467.js"
+    "static/js/main.488597ad.js"
   ]
 }
